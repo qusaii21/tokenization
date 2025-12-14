@@ -1,0 +1,8 @@
+flowchart LR
+    A[Raw Text Input] --> B[Text Cleaning<br/>Lowercasing, Normalization]
+    B --> C[Pre-Tokenization<br/>Whitespace & Punctuation Split]
+    C --> D[Subword Tokenization<br/>BPE / WordPiece / SentencePiece]
+    D --> E[Token to ID Mapping<br/>Vocabulary Lookup]
+    E --> F[Model Input<br/>Embeddings + Attention]
+    F --> G[Model Output IDs]
+    G --> H[Decoder<br/>IDs → Tokens → Text]

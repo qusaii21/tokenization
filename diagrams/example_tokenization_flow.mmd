@@ -1,0 +1,14 @@
+sequenceDiagram
+    participant User as User Text
+    participant Tokenizer as Tokenizer
+    participant Vocab as Vocabulary
+    participant Model as LLM
+
+    User->>Tokenizer: "Hello world!"
+    Tokenizer->>Tokenizer: Pre-tokenize
+    Tokenizer->>Tokenizer: Subword split
+    Tokenizer->>Vocab: Convert tokens to IDs
+    Vocab-->>Tokenizer: [154, 26, 7]
+    Tokenizer->>Model: Token IDs
+    Model-->>Tokenizer: Output IDs
+    Tokenizer-->>User: "Hello world!"

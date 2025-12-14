@@ -1,0 +1,12 @@
+flowchart TB
+    A[Input Text] --> B[Pre-Tokenizer]
+    B --> C[Tokenizer Core]
+
+    C --> D[Vocabulary<br/>Token ↔ ID Map]
+    C --> E[Encoder<br/>Tokens → IDs]
+    C --> F[Decoder<br/>IDs → Tokens]
+
+    D --> E
+    F --> G[Final Text Output]
+
+    C --> H[Special Tokens Handler<br/>PAD, UNK, CLS, SEP]

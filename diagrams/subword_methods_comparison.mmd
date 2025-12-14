@@ -1,0 +1,15 @@
+flowchart LR
+    A[Subword Tokenization]
+
+    A --> B[BPE]
+    A --> C[WordPiece]
+    A --> D[SentencePiece]
+
+    B --> B1[Merges frequent character pairs]
+    B --> B2[Used in GPT models]
+
+    C --> C1[Likelihood-based splitting]
+    C --> C2[Used in BERT]
+
+    D --> D1[Byte-level modeling]
+    D --> D2[No whitespace dependency]
