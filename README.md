@@ -9,7 +9,7 @@ Tokenization:
 
 ---
 
-## 📌 What you will Learn from this repository
+## What you will Learn from this repository
 
 - What tokenization is  
 - Why it’s critical for LLMs  
@@ -21,7 +21,7 @@ Tokenization:
 
 ---
 
-## 🧠 Why Tokenization Matters
+## Why Tokenization Matters
 
 Raw text cannot be directly processed by LLMs because models operate on numeric data (vectors). Tokenization maps text to numeric IDs efficiently, aiding:
 
